@@ -1,0 +1,60 @@
+@font-face {
+    font-family: adineueblack;
+    src: url(adineuePRO-BlackWeb.woff);
+}
+
+@font-face {
+    font-family: adineuebold;
+    src: url(adineuePRO-BoldWeb.woff);
+}
+
+@font-face {
+    font-family: adineuelight;
+    src: url(adineuePRO-LightWeb.woff);
+}
+
+body {
+    font-family: 'adineuebold', sans-serif;
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #fef200;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 100px;
+    position: relative;
+}
+
+section header {
+    width: 400px;
+    height: 300px;
+    line-height: 1;
+    background-color: #fef200;
+    position: absolute;
+    z-index: 1;
+}
+
+section header h1 {
+    margin-bottom: 20px;
+}
+
+section header p {
+    font-style: italic;
+    font-family: 'adineuelight';
+    font-size: 24px;
+}
+
+div {
+    font-weight: 100;
+    /* transform: scale(.2); */
+    transition: transform 200ms;
+}
